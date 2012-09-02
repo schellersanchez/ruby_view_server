@@ -1,0 +1,24 @@
+<% require 'date' %>
+
+<h1>This is a heading</h1>
+<h2>This is a heading</h2>
+<h3>This is a heading</h3>
+
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<a href="http://www.w3schools.com">This is a link</a>
+
+<p>
+  <% currentDay = Date.today %>
+  The date now is <%= currentDay %>
+</p>
+
+<% movies = ["Titanic", "Robocop", "Lion King", "Superman", "Star Wars: Episode 1"] %>
+Movies on list:
+<ul>
+    <% movies.each do |movie|%>
+        <li><%= movie%> </li>
+    <% end %>
+</ul>
